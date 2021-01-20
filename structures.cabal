@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: baa409325f2005af5bcbe363c1abe940a78473546d88e9f81f6235948731ef79
+-- hash: 8b78e184df9ccd1f18e285238cfc19986d95b27590942a5cc72d20de5fbbcc34
 
 name:           structures
 version:        0.1.0.0
@@ -19,7 +19,6 @@ license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
     README.md
-    ChangeLog.md
 
 source-repository head
   type: git
@@ -42,19 +41,6 @@ executable structures-exe
       Paths_structures
   hs-source-dirs:
       app
-  ghc-options: -threaded -rtsopts -with-rtsopts=-N
-  build-depends:
-      base >=4.7 && <5
-    , structures
-  default-language: Haskell2010
-
-test-suite structures-test
-  type: exitcode-stdio-1.0
-  main-is: Spec.hs
-  other-modules:
-      Paths_structures
-  hs-source-dirs:
-      test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
